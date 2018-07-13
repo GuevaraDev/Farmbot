@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+  <title>Seedbot</title>
+
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/jumbotron-narrow.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/design.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container-fliud">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation"><a href="/">Home</a></li>
+          <li role="presentation" class="active"><a href="/plantar">Back</a></li>
+          <!--<li role="presentation"><a href="/about">About</a></li>-->
+        </ul>
+      </nav>
+      <h3 class="text-muted">Seedbot</h3>
+    </div>
+
+    <div class="jumbotron">
+      <h1>Seleccion de area</h1>
+    </div>
+    
+    <div class="container-fluid">
+        
+      <div class="row marketing align-items-center justify-content-center">
+            <div class="col-xs" id="row5">
+              <p>
+                <button type="button" id="e1" class="btn btn-primary">&nbsp;E1&nbsp;</button>
+                <button type="button" id="e2" class="btn btn-primary">&nbsp;E2&nbsp;</button>
+                <button type="button" id="e3" class="btn btn-primary">&nbsp;E3&nbsp;</button>
+                <button type="button" id="e4" class="btn btn-primary">&nbsp;E4&nbsp;</button>
+                <button type="button" id="e5" class="btn btn-primary">&nbsp;E5&nbsp;</button>
+                <!--
+                <button type="button" id="set_on" class="btn btn-success">Grid C4</button>
+                -->
+              </p>
+            </div>
+          </div>
+          
+	  <div class="row marketing align-items-center justify-content-center">
+            <div class="col-xs" id="row4">
+              <p>
+                <button type="button" id="d1" class="btn btn-primary">&nbsp;D1&nbsp;</button>
+                <button type="button" id="d2" class="btn btn-primary">&nbsp;D2&nbsp;</button>
+                <button type="button" id="d3" class="btn btn-primary">&nbsp;D3&nbsp;</button>
+                <button type="button" id="d4" class="btn btn-primary">&nbsp;D4&nbsp;</button>
+                <button type="button" id="d5" class="btn btn-primary">&nbsp;D5&nbsp;</button>
+                <!--
+                <button type="button" id="set_on" class="btn btn-success">Grid C4</button>
+                -->
+              </p>
+            </div>
+          </div>
+
+	 	
+		<div class="row marketing align-items-center justify-content-center">
+            <div class="col-xs" id="row3">
+              <p>
+                <button type="button" id="c1" class="btn btn-primary">&nbsp;C1&nbsp;</button>
+                <button type="button" id="c2" class="btn btn-primary">&nbsp;C2&nbsp;</button>
+                <button type="button" id="c3" class="btn btn-primary">&nbsp;C3&nbsp;</button>
+                <button type="button" id="c4" class="btn btn-primary">&nbsp;C4&nbsp;</button>
+                <button type="button" id="c5" class="btn btn-primary">&nbsp;C5&nbsp;</button>
+                <!--
+                <button type="button" id="set_on" class="btn btn-success">Grid C4</button>
+                -->
+              </p>
+            </div>
+          </div>
+		
+		<div class="row marketing align-items-center justify-content-center">
+            <div class="col-xs" id="row2">
+              <p>
+                <button type="button" id="b1" class="btn btn-primary">&nbsp;B1&nbsp;</button>
+                <button type="button" id="b2" class="btn btn-primary">&nbsp;B2&nbsp;</button>
+                <button type="button" id="b3" class="btn btn-primary">&nbsp;B3&nbsp;</button>
+                <button type="button" id="b4" class="btn btn-primary">&nbsp;B4&nbsp;</button>
+                <button type="button" id="b5" class="btn btn-primary">&nbsp;B5&nbsp;</button>
+                <!--
+                  <button type="button" id="set_on" class="btn btn-success">Grid B4</button>
+                -->
+               </p>
+            </div>
+          </div>
+		
+		<div class="row marketing align-items-center">
+            <div class="col-xs offset-xs" id="row1">
+              <p>
+                <button type="button" id="a1" class="btn btn-primary">&nbsp;A1&nbsp;</button>
+                <button type="button" id="a2" class="btn btn-primary">&nbsp;A2&nbsp;</button>
+                <button type="button" id="a3" class="btn btn-primary">&nbsp;A3&nbsp;</button>
+                <button type="button" id="a4" class="btn btn-primary">&nbsp;A4&nbsp;</button>
+                <button type="button" id="a5" class="btn btn-primary">&nbsp;A5&nbsp;</button>
+                <!--
+                  <button type="button" id="set_on" class="btn btn-success">Grid A4</button>
+                -->
+              </p>
+            </div>
+          </div>
+          <!--
+          <div class="row marketing align-items-center justify-content-center">
+            <div class="col-xs" id="row0">
+              <p>
+                <button type="button" id="T1" class="btn btn-primary">Grid T1</button>
+                <button type="button" id="T2" class="btn btn-primary">Grid T2</button>
+                <button type="button" id="T3" class="btn btn-primary">Grid T3</button>
+                <button type="button" id="T4" class="btn btn-primary">Grid T4</button>
+                <button type="button" id="T5" class="btn btn-primary">Grid T5</button>
+                </p>
+            </div>
+          </div>
+		-->
+    </div>
+   
+
+    <footer class="footer">
+      <p>&copy; IM9-1 UPV</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+  <script src="{{ url_for('static', filename='js/jquery-2.2.2.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/f_btn30.js') }}"></script>
+</body>
+
+</html>

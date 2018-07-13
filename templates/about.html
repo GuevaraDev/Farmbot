@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+  <title>Farmbot Control Panel</title>
+
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='css/jumbotron-narrow.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container-fliud">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation"><a href="/">Home</a></li>
+          <li role="presentation"<a href="/demo">Semillas</a></li>
+          <li role="presentation" class="active"><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Seedbot</h3>
+    </div>
+
+    <div class="jumbotron">
+      <h1>Mecatronica</h1>
+      <p class="lead">IM9-1</p>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; IM9-1 UPV</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+</body>
+
+</html>

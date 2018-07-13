@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+  <title>Farmbot Control Panel</title>
+
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/jumbotron-narrow.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/design.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container-fliud">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation" class="active"><a href="/">Refresh</a></li>
+          <!--<li role="presentation"><a href="/demo"  class="text-muted">Semillas</a></li>
+          <li role="presentation"><a href="/about" class="text-muted">Riego</a></li>-->
+        </ul>
+      </nav>
+      <h3 class="text-muted">Seedbot</h3>
+    </div>
+
+    <div class="jumbotron">
+      <h1>Seedbot UPV</h1>
+    </div>
+	<!--
+	<div class="row marketing align-items-center">
+		<div class="col-xs offset-xs" id="row1">
+			<p>
+			<a href="/plantar" id="p1" class="btn btn-warning">Plantar</a>
+			<a href="/" id="r1" class="btn btn-primary">Regar</a>
+			<a href="/" id="i1" class="btn btn-success">Vision</a>
+            </p>
+		</div>
+    </div>
+    -->
+    <div class="container-fluid">
+		
+		<a href="/plantar" id="p1" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-leaf"></span>&nbsp;Plantar</a>
+		<a href="/" id="r1" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-tint">&nbsp;Regar</a>
+		<a href="/" id="i1" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-camera">&nbsp;Vision</a>
+	</div>
+	
+    <footer class="footer">
+      <p>&copy; IM9-1 UPV</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+  <script src="{{ url_for('static', filename='js/jquery-2.2.2.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/demo_0.js') }}"></script>
+</body>
+
+</html>
